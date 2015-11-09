@@ -1,0 +1,8 @@
+jenkins:
+  build: master
+  ports:
+    - 8080
+jenkins-slave:
+  build: slave
+  links:
+    - jenkins
